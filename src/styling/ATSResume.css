@@ -1,0 +1,412 @@
+/* --- Base Theme & Variables --- */
+:root {
+  --bg-primary: #1e1f29;      /* Dark background */
+  --bg-secondary: #2c303b;    /* Slightly lighter dark */
+  --bg-tertiary: #3a3f4d;     /* Lighter accent dark */
+  --text-primary: #f8f9fa;   /* Light text */
+  --text-secondary: #adb5bd; /* Greyish text */
+  --accent-primary: #007bff; /* Blue accent (Bootstrap primary) */
+  --accent-secondary: #6c757d; /* Grey accent (Bootstrap secondary) */
+  --border-color: #495057;   /* Dark border */
+  --card-bg: #252833;        /* Background for result cards */
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --border-radius: 0.375rem; /* Standard Bootstrap border-radius */
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --box-shadow-light: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.2s;
+}
+
+/* --- Global & Container --- */
+body {
+  /* Apply base font smoothing if needed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.resume-form-container {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 2rem; /* More padding */
+  border-radius: var(--border-radius);
+  /* Use Tailwind shadow or custom shadow */
+  /* box-shadow: var(--box-shadow); */
+  max-width: 900px; /* Control max width */
+  margin: 2rem auto; /* Center the container */
+}
+
+.main-title {
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+/* --- Form Styling --- */
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+/* Style Bootstrap Form Labels */
+.form-label {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Style Bootstrap Form Controls (Textarea, Inputs) */
+.form-control,
+.form-select { /* Added form-select if you use dropdowns */
+  background-color: var(--bg-secondary) !important; /* Override bootstrap */
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--border-radius) !important;
+  padding: 0.75rem 1rem !important; /* Adjust padding */
+  transition: border-color var(--transition-speed) ease-in-out, box-shadow var(--transition-speed) ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important; /* Bootstrap focus shadow */
+  outline: 0; /* Remove default outline */
+}
+
+/* Placeholder text color */
+.form-control::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* Textarea specific */
+.form-input-textarea {
+  min-height: 150px; /* Ensure decent height */
+  resize: vertical; /* Allow vertical resize */
+}
+
+/* --- File Upload Styling --- */
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between button and text */
+}
+
+/* Style the label like a button (using Bootstrap classes + custom) */
+.file-upload-label {
+  /* Use Bootstrap button styles for consistency */
+  /* Example: Match the secondary button */
+  background-color: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* Adjust padding */
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-speed), border-color var(--transition-speed);
+  white-space: nowrap; /* Prevent wrapping */
+  display: inline-block; /* Needed for padding */
+}
+
+.file-upload-label:hover {
+  background-color: darken(var(--accent-secondary), 10%);
+  border-color: darken(var(--accent-secondary), 12%);
+}
+
+/* Visually hide the actual input, but keep it accessible */
+.file-upload-input {
+    /* Styles moved to inline `style={{ display: 'none' }}` for simplicity,
+       but could be kept here if preferred */
+}
+
+.file-name-display {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  overflow: hidden; /* Prevent long names from breaking layout */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* --- Buttons --- */
+.submit-button {
+  width: 100%; /* Make submit button full width */
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  margin-top: 1rem; /* Add space above */
+  /* Uses Bootstrap `variant="primary"` */
+  /* Add transition for hover effect */
+   transition: background-color var(--transition-speed), border-color var(--transition-speed), transform 0.1s ease;
+}
+.submit-button:hover {
+    /* Let Bootstrap handle hover, or define custom */
+}
+.submit-button:active {
+    transform: scale(0.98); /* Slight shrink on click */
+}
+
+
+/* --- Results Section --- */
+.results-section {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color); /* Separator */
+}
+
+.results-title {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Button Group for Results */
+.results-button-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 0.75rem; /* Space between buttons */
+  margin-bottom: 2rem;
+  justify-content: center; /* Center buttons */
+}
+
+.result-button {
+  /* Using Bootstrap variant="outline-light" */
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+  /* Ensure text color contrasts with outline */
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+.result-button:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--bg-tertiary);
+}
+
+/* Active state for the selected result button */
+.result-button.active {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: var(--text-primary); /* Ensure text is readable */
+  font-weight: 500;
+}
+
+.result-button:disabled {
+    /* Style disabled buttons if needed */
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* --- Result Content Display Area --- */
+.result-content-area {
+  margin-top: 1rem;
+}
+
+/* Common styling for all result cards */
+.result-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem; /* Space between cards if multiple were shown */
+  box-shadow: var(--box-shadow-light);
+  border: 1px solid var(--border-color);
+  animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+}
+
+.result-card h3 {
+  color: var(--accent-primary); /* Use accent color for titles */
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.result-card h4 {
+    color: var(--text-primary);
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+.result-card h5 {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.result-card ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+}
+
+.result-card li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2em; /* Indent */
+  position: relative;
+  color: var(--text-primary);
+}
+
+.result-card li::before {
+  content: '•'; /* Custom bullet */
+  color: var(--accent-primary); /* Bullet color */
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+/* --- Specific Result Card Sections --- */
+
+/* Analysis Section */
+.analysis-section h3::before { content: '📊 '; } /* Add emoji */
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+}
+.analysis-card-item { /* Style individual blocks within the grid */
+    background-color: var(--bg-secondary); /* Slightly different bg */
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+.analysis-card-item h5 { /* Titles within analysis items */
+    color: var(--accent-primary);
+    margin-bottom: 0.75rem;
+}
+
+/* Skills Analysis Specific */
+.skills-analysis-block { /* Container for matched/missing skills */
+    /* Inherits analysis-card-item styles */
+}
+.skills-analysis-block h6 { /* Matched/Missing titles */
+    color: var(--text-secondary);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.skills-list li::before { /* Customize bullets for skills */
+    content: '› '; /* Different bullet */
+    font-weight: bold;
+}
+.matched-skills li::before { color: var(--success-color); } /* Green bullet */
+.missing-skills li::before { color: var(--warning-color); } /* Orange/Yellow bullet */
+
+
+/* ATS Score Section */
+.ats-score-section h3::before { content: '✅ '; } /* Add emoji */
+.ats-score-summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+.ats-score-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns, responsive */
+  gap: 2rem;
+}
+.ats-score-column h4 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+}
+.ats-section-card, .ats-suggestions-card, .ats-keywords-card {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+}
+.ats-section-card h5 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+.ats-section-card p {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    margin-bottom: 0.75rem;
+}
+
+/* Tailored Resume, Cover Letter, Cold Email Sections */
+.tailored-resume-section h3::before { content: '📄 '; }
+.cover-letter-section h3::before { content: '📝 '; }
+.cold-email-section h3::before { content: '📩 '; }
+
+.formatted-text-output {
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+  word-wrap: break-word; /* Wrap long lines */
+  background-color: var(--bg-secondary); /* Slightly different background */
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: monospace; /* Good for preformatted text */
+  font-size: 0.95em;
+  max-height: 500px; /* Limit height and allow scrolling */
+  overflow-y: auto;
+}
+
+/* --- Utilities & Animations --- */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Optional: slight upward move */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style Bootstrap Alerts */
+.alert-danger {
+  background-color: rgba(var(--danger-rgb, 220, 53, 69), 0.2); /* Use transparent bg */
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  border-radius: var(--border-radius);
+}
+.alert-danger .btn-close { /* Style the close button */
+    filter: brightness(0) invert(1); /* Make it visible on dark background */
+}
+
+
+/* --- Responsive Adjustments (Example) --- */
+@media (max-width: 768px) {
+  .resume-form-container {
+    padding: 1.5rem;
+  }
+  .main-title {
+    font-size: 1.8rem;
+  }
+  .analysis-grid, .ats-score-grid {
+    grid-template-columns: 1fr; /* Stack columns */
+  }
+  .results-button-group {
+      gap: 0.5rem;
+  }
+  .result-button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 576px) {
+    .resume-form-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .file-upload-wrapper {
+        flex-direction: column; /* Stack button and filename */
+        align-items: flex-start;
+    }
+    .file-name-display {
+        margin-top: 0.5rem;
+    }
+}

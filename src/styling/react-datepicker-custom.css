@@ -1,0 +1,101 @@
+/* src/styling/react-datepicker-custom.css */
+
+/* Ensure the input field itself uses the classes we gave it */
+.react-datepicker-wrapper .form-control {
+    /* Styles should already be applied via the className prop, but you can add overrides */
+    /* Example: ensure background matches */
+     background-color: #1B212D !important; /* Might need !important to override */
+     color: white !important;
+     border: none !important;
+}
+
+/* Calendar popup styling */
+.react-datepicker {
+    font-family: inherit; /* Use your site's font */
+    border: 1px solid #444; /* Darker border */
+    background-color: #2C303B; /* Dark background */
+    color: #ccc; /* Light text */
+}
+
+.react-datepicker__header {
+    background-color: #1B212D; /* Darker header */
+    border-bottom: 1px solid #444;
+    padding-top: 8px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+    color: white !important; /* White text for month/year/nav */
+}
+.react-datepicker__navigation--previous:hover,
+.react-datepicker__navigation--next:hover {
+   filter: brightness(1.3);
+}
+
+
+.react-datepicker__year-dropdown,
+.react-datepicker__month-dropdown,
+.react-datepicker__month-year-dropdown {
+     background-color: #3a3f4b; /* Dropdown background */
+     border: 1px solid #555;
+     color: white;
+}
+
+.react-datepicker__month-option:hover,
+.react-datepicker__year-option:hover {
+    background-color: #5a5f6b;
+}
+
+.react-datepicker__month-option--selected_month,
+.react-datepicker__year-option--selected_year {
+   background-color: #0d6efd; /* Bootstrap primary or your theme color */
+   color: white;
+   font-weight: bold;
+}
+
+
+/* Month/Year Picker Specifics */
+.react-datepicker__month-year-picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items */
+}
+
+.react-datepicker__month-year-picker .react-datepicker__year-option,
+.react-datepicker__month-year-picker .react-datepicker__month-option {
+     display: inline-block; /* Allow multiple per line */
+     width: 30%;          /* Adjust width as needed */
+     line-height: 40px;   /* Adjust spacing */
+     text-align: center;
+     margin: 5px 1.5%;
+     border-radius: 0.3rem; /* Rounded corners */
+     padding: 0; /* Remove default padding if needed */
+}
+
+
+.react-datepicker__month-year-picker .react-datepicker__month-option:hover,
+.react-datepicker__month-year-picker .react-datepicker__year-option:hover {
+     background-color: #5a5f6b; /* Hover effect */
+}
+
+.react-datepicker__month-year-picker .react-datepicker__month-option.react-datepicker__month-option--selected_month {
+     background-color: #0d6efd; /* Selection color */
+     color: white;
+}
+
+
+/* Style invalid state */
+.react-datepicker__input-container .form-control.is-invalid {
+    border: 1px solid #dc3545 !important; /* Red border for invalid */
+    background-image: none !important; /* Remove default react-bootstrap icon if desired */
+}
+
+/* Adjust triangle color */
+.react-datepicker__triangle::before,
+.react-datepicker__triangle::after {
+    border-bottom-color: #1B212D !important; /* Match header background */
+}
+.react-datepicker__triangle::before {
+     border-bottom-color: #444 !important; /* Match border color */
+}

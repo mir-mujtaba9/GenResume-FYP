@@ -1,0 +1,198 @@
+/* Base styles */
+.resume-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 4000px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+.ResumeGenerationContent-card {
+    width: 100%;
+    max-width: 1400px; /* Set max width */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add some shadow for visual effect */
+    border-radius: 10px; /* Rounded corners */
+}
+.form-group .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.alert-danger {
+    margin-bottom: 20px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-container button {
+    margin-right: 10px;
+}
+
+/* Responsive adjustments */
+
+/* For tablet screens and smaller laptops (up to 1024px) */
+@media (max-width: 1024px) {
+    .resume-form-container {
+        max-width: 80%;  /* Reduce the max-width for medium-sized devices */
+        padding: 15px;   /* Reduce padding for smaller screens */
+    }
+
+    .form-section h3 {
+        font-size: 1.2rem;  /* Adjust the font size slightly */
+    }
+
+    .form-control {
+        padding: 8px;  /* Reduce padding in input fields */
+        font-size: 0.95rem;  /* Slightly smaller font size */
+    }
+
+    .button-container {
+        flex-direction: column;  /* Stack buttons vertically */
+        align-items: flex-start;
+    }
+
+    .button-container button {
+        margin-bottom: 10px;  /* Add space between buttons in vertical layout */
+        width: 100%;  /* Full-width buttons for better touch access */
+    }
+}
+
+/* For mobile screens (up to 768px) */
+@media (max-width: 768px) {
+    .resume-form-container {
+        max-width: 95%;  /* Almost full-width for mobile devices */
+        padding: 10px;  /* Reduce padding even more for smaller screens */
+    }
+
+    .form-section h3 {
+        font-size: 1.1rem;  /* Smaller heading for mobile */
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 0.9rem;  /* Smaller font size for mobile */
+    }
+
+    .button-container {
+        flex-direction: column;  /* Stack buttons vertically */
+        align-items: stretch;  /* Buttons should stretch to full width */
+    }
+
+    .button-container button {
+        width: 100%;  /* Full-width buttons */
+        margin-bottom: 10px;  /* Space between buttons */
+    }
+}
+
+/* For very small devices (up to 480px) */
+@media (max-width: 480px) {
+    .resume-form-container {
+        max-width: 100%;  /* Full-width for very small screens */
+        padding: 5px;  /* Minimal padding */
+    }
+
+    .form-section h3 {
+        font-size: 1rem;  /* Smaller font for very small screens */
+    }
+
+    .form-control {
+        padding: 6px;
+        font-size: 0.85rem;  /* Smaller font size for mobile */
+    }
+
+    .button-container button {
+        width: 100%;  /* Full-width buttons */
+        margin-bottom: 8px;  /* Reduced space between buttons */
+    }
+}
+
+/* .resume-form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.form-group .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.alert-danger {
+    margin-bottom: 20px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-container button {
+    margin-right: 10px;
+} */

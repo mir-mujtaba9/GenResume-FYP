@@ -1,0 +1,44 @@
+/* ProfileContent.css */
+input::placeholder,
+textarea::placeholder {
+    font-size: 0.9rem; /* Adjust this value as needed */
+    color: #888;
+}
+
+
+.profile-form-container {
+    max-width: 1200px; /* Maximum width for the form */
+    margin: 20px auto; /* Centering the form */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+    /* background-color: #f9f9f9;  */
+}
+.login-card {
+    width: 100%;
+    max-width: 400px; /* Set max width */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add some shadow for visual effect */
+    border-radius: 10px; /* Rounded corners */
+}
+.form-section {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+h1 {
+    color: #007bff; /* Heading color */
+}
+
+h3 {
+    color: #495057; /* Subheading color */
+}
+
+.btn {
+    margin-top: 10px; /* Space above buttons */
+}
+
+textarea {
+    resize: none; /* Prevent resizing of textareas */
+}

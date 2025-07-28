@@ -1,0 +1,37 @@
+/* .navbar-brand-style {
+    margin-left: 20px;
+}
+
+.nav-style {
+    max-height: 100px;
+}
+
+.form-style .button-login,
+.form-style .button-register {
+    margin-right: 20px;
+    margin-top: 8px;
+} */
+
+.navbar-brand-style {
+    margin-left: 20px;
+}
+
+.nav-style {
+    max-height: 100px;
+}
+
+/* Additional custom styles for the middle links */
+.nav-link {
+    display: inline-block;  /* Ensures proper alignment and spacing */
+    margin-right: 10px;     /* Space between links */
+}
+
+.btn-outline-success {
+    border-color: #28a745;  /* Custom border color for outline buttons */
+    color: #28a745;         /* Custom text color to match the border */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;  /* Change background on hover */
+    color: #ffffff;              /* Text color change on hover */
+}

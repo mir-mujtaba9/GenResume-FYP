@@ -1,0 +1,22 @@
+.logo-container {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+  }
+  
+  .logo-image {
+    width: 400px;
+    height: auto;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+  }
+  

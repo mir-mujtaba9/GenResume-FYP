@@ -1,0 +1,19 @@
+/* src/styling/ResumePreview.css */
+
+/* Styles for the container HOLDING the template preview */
+.resume-preview-area {
+    background-color: #e9ecef; /* Slightly off-white background for contrast */
+    max-width: 9in; /* A bit wider than paper for padding */
+    margin: 20px auto; /* Center the preview area with some top/bottom margin */
+    padding: 20px; /* Padding around the actual resume */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    border-radius: 4px;
+    overflow-x: auto; /* Allow horizontal scroll if somehow needed */
+}
+
+/* Ensure the resume *inside* the preview uses its own background */
+.resume-preview-area > div { /* Target the .resume-classic, .resume-modern etc. div */
+     max-width: 8.5in; /* Paper width */
+     margin: 0 auto; /* Center the 'paper' inside the preview area */
+     box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Slight shadow on the 'paper' */
+ }

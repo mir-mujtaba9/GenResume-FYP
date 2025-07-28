@@ -1,0 +1,137 @@
+/* src/components/cv-templates/TemplateModern.css */
+/* Styles specifically for the Modern Template HTML Preview */
+
+.resume-modern {
+    font-family: 'Calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Different font */
+    color: #444;
+    background-color: #fff;
+    padding: 0; /* Padding handled internally by columns */
+    font-size: 10.5pt;
+    line-height: 1.35;
+    display: flex;
+    min-height: 10.5in;
+}
+
+.resume-modern .sidebar-modern {
+    flex: 0 0 2.5in; /* Fixed width sidebar */
+    background-color: #f2f2f2; /* Light gray background for sidebar */
+    padding: 0.5in 0.4in;
+    color: #333;
+}
+
+.resume-modern .main-content-modern {
+    flex: 1; /* Main content takes remaining space */
+    padding: 0.5in 0.6in;
+}
+
+.resume-modern .resume-header-modern {
+    margin-bottom: 0.3in;
+    padding-bottom: 0.1in;
+    border-bottom: 2px solid #1a5f7a; /* Accent color border */
+}
+
+.resume-modern .resume-header-modern h1 {
+    font-size: 24pt;
+    color: #1a5f7a; /* Accent color */
+    margin: 0 0 3px 0;
+    font-weight: bold;
+}
+/* Optional headline style */
+.resume-modern .resume-header-modern .headline {
+    font-size: 11pt;
+    color: #555;
+    margin: 0;
+}
+
+
+.resume-modern .resume-section-modern { /* Sections in main content */
+    margin-bottom: 0.25in;
+}
+.resume-modern .resume-section-modern:last-of-type {
+    margin-bottom: 0.1in;
+}
+
+
+.resume-modern .resume-section-modern h2 {
+    font-size: 13pt;
+    color: #1a5f7a; /* Accent color */
+    /* border-bottom: 1px solid #e0e0e0; */ /* Optional border */
+    padding-bottom: 2px;
+    margin-bottom: 0.15in;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.resume-modern .resume-entry-modern {
+    margin-bottom: 0.2in;
+}
+.resume-modern .resume-entry-modern:last-child {
+    margin-bottom: 0;
+}
+
+
+.resume-modern .resume-entry-modern .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+}
+
+.resume-modern .resume-entry-modern h3 { /* Job Title / Degree */
+    font-size: 11.5pt;
+    font-weight: bold;
+    margin: 0;
+    color: #222;
+}
+
+.resume-modern .resume-entry-modern .entry-dates {
+    font-size: 9pt;
+    color: #666;
+    font-style: italic;
+}
+
+.resume-modern .resume-entry-modern .sub-heading { /* Company / Institution */
+    font-size: 10pt;
+    font-weight: bold;
+    color: #555;
+    margin: 0 0 4px 0;
+}
+
+.resume-modern .resume-entry-modern .details {
+    margin: 0;
+    font-size: 10pt;
+}
+
+/* --- Sidebar Styles --- */
+.resume-modern .sidebar-section {
+    margin-bottom: 0.3in;
+}
+.resume-modern .sidebar-section:last-of-type {
+    margin-bottom: 0.1in;
+}
+
+.resume-modern .sidebar-section h2 { /* Section titles in sidebar */
+     font-size: 11pt;
+     color: #1a5f7a; /* Accent color */
+     margin-bottom: 8px;
+     padding-bottom: 2px;
+     border-bottom: 1px solid #ccc;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     font-weight: bold;
+}
+
+.resume-modern .sidebar-section p {
+    font-size: 10pt;
+    margin: 0 0 5px 0;
+    line-height: 1.4;
+    word-wrap: break-word; /* Wrap long emails/links */
+}
+.resume-modern .sidebar-section.contact-section p {
+    margin-bottom: 8px; /* More space in contact info */
+}
+
+.resume-modern .sidebar-section.skills-section p {
+    /* Optional: Add list styling if needed */
+}

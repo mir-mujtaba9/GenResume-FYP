@@ -1,0 +1,36 @@
+/* Center the container vertically and horizontally */
+.registration-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the card holding the registration form */
+.registration-card {
+    width: 100%;
+    max-width: 600px; /* Set max width */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Add some spacing and font style for the heading */
+.registration-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333; /* Darker color for the heading */
+}
+
+/* Custom styles for the form inputs and buttons */
+.form-control {
+    font-size: 18px; /* Larger font size */
+    padding: 10px;   /* Larger padding for input fields */
+}
+
+.btn {
+    font-size: 18px;   /* Larger font size for the button text */
+    padding: 10px 20px; /* Larger padding for a bigger button */
+    width: 100%;        /* Full width for the button */
+}

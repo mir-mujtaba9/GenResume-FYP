@@ -1,0 +1,157 @@
+/* src/components/cv-templates/TemplateSkillFocus.css */
+/* Styles for SkillFocus HTML Preview */
+
+.resume-skillfocus {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean Sans-serif */
+    color: #333;
+    background-color: #fff;
+    padding: 0.5in 0.7in; /* Moderate margins */
+    font-size: 10.5pt;
+    line-height: 1.4;
+    min-height: 10.5in;
+}
+
+.resume-skillfocus .resume-header-skillfocus {
+    text-align: left; /* Left align header */
+    margin-bottom: 0.3in;
+    border-bottom: 1.5px solid #4a90e2; /* Accent color border */
+    padding-bottom: 0.15in;
+}
+
+.resume-skillfocus .resume-header-skillfocus h1 {
+    font-size: 24pt;
+    margin: 0 0 4px 0;
+    font-weight: bold;
+    color: #2d3748; /* Dark blue/gray */
+}
+/* Optional headline style */
+.resume-skillfocus .resume-header-skillfocus .headline-skillfocus {
+     font-size: 11pt;
+     color: #4a5568; /* Medium gray */
+     margin: 0 0 8px 0;
+ }
+
+.resume-skillfocus .resume-header-skillfocus .contact-info-skillfocus {
+    font-size: 9.5pt;
+    color: #4a5568;
+    margin: 0;
+}
+.resume-skillfocus .resume-header-skillfocus .contact-info-skillfocus .separator {
+    color: #a0aec0; /* Lighter separator */
+    margin: 0 0.4em;
+}
+.resume-skillfocus .resume-header-skillfocus .contact-info-skillfocus a {
+    color: #4a90e2; /* Accent color for link */
+    text-decoration: none;
+}
+.resume-skillfocus .resume-header-skillfocus .contact-info-skillfocus a:hover {
+    text-decoration: underline;
+}
+
+
+.resume-skillfocus .resume-section-skillfocus {
+    margin-bottom: 0.25in;
+}
+.resume-skillfocus .resume-section-skillfocus:last-of-type {
+     margin-bottom: 0.1in;
+ }
+
+
+.resume-skillfocus .resume-section-skillfocus h2 {
+    font-size: 12pt; /* Slightly smaller section headings */
+    color: #2d3748; /* Dark blue/gray */
+    /* border-bottom: 1px solid #e2e8f0; */ /* Optional subtle border */
+    padding-bottom: 2px;
+    margin-bottom: 0.15in;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Special styling for the highlighted skills section */
+.resume-skillfocus .skills-highlight {
+    /* background-color: #f7fafc; */ /* Optional subtle background */
+    /* border: 1px solid #e2e8f0; */
+    /* padding: 0.15in; */
+    margin-bottom: 0.3in; /* More space after skills */
+    /* border-radius: 4px; */
+}
+.resume-skillfocus .skills-highlight h2 {
+    /* Styles specific to skills heading if needed */
+     margin-bottom: 0.1in;
+}
+.resume-skillfocus .skills-highlight .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal layout if desired */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 8px 15px; /* Row and column gap */
+}
+.resume-skillfocus .skills-highlight .skills-list li {
+    /* background-color: #e2e8f0; */ /* Optional background for skill tags */
+    /* color: #4a5568; */
+    /* padding: 3px 8px; */
+    /* border-radius: 3px; */
+    font-size: 10pt;
+    margin-bottom: 5px; /* If not using flex gap */
+}
+
+
+.resume-skillfocus .resume-entry-skillfocus {
+    margin-bottom: 0.18in;
+}
+.resume-skillfocus .resume-entry-skillfocus:last-child {
+    margin-bottom: 0;
+}
+
+
+.resume-skillfocus .resume-entry-skillfocus .entry-header-skillfocus {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+}
+
+.resume-skillfocus .resume-entry-skillfocus h3 { /* Job Title / Degree */
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0;
+    color: #2d3748;
+}
+
+.resume-skillfocus .resume-entry-skillfocus .dates-skillfocus {
+    font-size: 9pt;
+    color: #718096; /* Medium gray for dates */
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.resume-skillfocus .resume-entry-skillfocus .sub-heading-skillfocus { /* Company / Institution */
+    font-size: 10pt;
+    font-weight: bold;
+    color: #4a5568;
+    margin: 0 0 4px 0;
+}
+
+.resume-skillfocus .resume-entry-skillfocus .details-skillfocus {
+    margin: 0;
+    font-size: 10pt;
+    color: #4a5568;
+}
+
+/* Additional Info Section */
+.resume-skillfocus .additional-entry-skillfocus {
+    margin-bottom: 0.1in;
+}
+.resume-skillfocus .additional-entry-skillfocus h4 {
+    font-size: 10.5pt;
+    font-weight: bold;
+    margin: 0 0 2px 0;
+    color: #4a5568;
+}
+.resume-skillfocus .additional-entry-skillfocus p {
+    margin: 0;
+    font-size: 10pt;
+    color: #4a5568;
+}

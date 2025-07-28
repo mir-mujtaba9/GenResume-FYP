@@ -1,0 +1,30 @@
+/* LoginPage.css */
+/* Center the container vertically and horizontally */
+.login-container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the card holding the login form */
+.ProfilePageContent-card {
+    width: 100%;
+    max-width: 1400px; /* Set max width */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Add some shadow for visual effect */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Add some spacing and font style for the heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333; /* Darker color for the heading */
+}
+
+/* Button styling */
+.login-button {
+    width: 100%; /* Make the button full width */
+}

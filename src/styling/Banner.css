@@ -1,0 +1,39 @@
+.career-start-section {
+    background-color: #EDDFE0;  /* Light gray background for visibility */
+    padding: 40px 60px;  /* Sufficient padding for aesthetics */
+    height: 100vh;  /* Full viewport height to cover other content */
+    width: 100%;  /* Full width */
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    align-items: flex-start;  /* Center-align children horizontally */
+    justify-content: center;  /* Center-align children vertically */
+    position: relative;  /* Positioning context */
+    z-index: 10;  /* Ensure it's above other content */
+}
+
+.career-start-section h1 {
+    font-family: 'Poppins', sans-serif;  /* Stylish, modern font */
+    font-size: 48px;  /* Large size for emphasis */
+    color: #2A5470;  /* Deep blue for contrast */
+    text-align: center;  /* Center-align the text */
+    margin-bottom: 20px;  /* Space between heading and buttons */
+}
+
+.button-group {
+    display: flex;  /* Align buttons in a row */
+    gap: 20px;  /* Space between buttons */
+}
+
+.button-group button {
+    padding: 10px 20px;  /* Padding for clickability */
+    font-size: 16px;  /* Readable font size */
+    background-color: #4A47A3;  /* Consistent theme color */
+    color: white;  /* Text color for visibility */
+    border: none;  /* No border for modern appearance */
+    border-radius: 5px;  /* Rounded corners for aesthetics */
+    cursor: pointer;  /* Cursor indication for interactivity */
+}
+
+.button-group button:hover {
+    background-color: #6A73D2;  /* Lighter color on hover */
+}

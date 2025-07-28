@@ -1,0 +1,94 @@
+.stylish-section {
+    background: linear-gradient(135deg, #66d3fa 0%, #b3f2dd 100%);
+    position: relative;
+    padding: 60px 20px;
+    border-radius: 0 0 100% 100%;  /* Rounded only at the bottom */
+    height: 400px;
+    overflow: hidden;
+}
+
+.stylish-section::before {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;  /* Default font for items */
+    font-size: 18px;
+}
+
+#resume-generation {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#cover-letter {
+    text-decoration: underline;
+}
+
+#job-recommendation {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+#career-guidance {
+    font-family: 'Georgia', serif;  /* Elegant serif font for a sophisticated look */
+    font-size: 22px;  /* Larger size for emphasis */
+      /* A deep indigo color for a professional yet unique look */
+    text-shadow: 2px 2px 4px #d1d1e9;  /* Subtle shadow for added depth */
+}
+
+
+#skill-gap-analysis {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#market-trends {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
